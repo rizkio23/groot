@@ -1,0 +1,52 @@
+html{
+
+	/*UKURAN DEFAULT (JANGAN DIGANTI!)*/
+	font-size: 62.5%; 
+	/*
+	- Untuk ukuran font menggunakan unit ukur REM (Root EM)
+	- Karena ukuran root font adalah 62.5% atau samadengan 10px
+	- Maka 1rem = 10px, 2rem = 20px (2x10)
+	*/
+}
+
+body{
+	/*Ganti ukuran font disini*/
+	font-size: 1.3rem;
+	/*Ganti jenis font disini*/
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/*Jangan diganti*/
+	line-height: 1.7;
+  	font-weight: 400;
+  	color:#333;
+}
+
+p{
+	margin-bottom: 1rem;
+	text-align: justify;
+	font-size: 1.4rem;
+}
+
+a 		{color: #4F86F7; text-decoration: none;}
+a:hover	{color: #FF0038}
+
+big{font-size: 1.2em; font-weight: bold}
+
+/*HEADING*/
+h1,h2,h3,h4,h5,h6{margin-bottom: 0.5rem; font-weight: bold; color: #333}
+h1	{font-size: 3.8rem; line-height: 1.2; letter-spacing: -.1rem}
+h2	{font-size: 2.6rem; line-height: 1.25; letter-spacing: -.03rem}
+h3	{font-size: 2.2rem; line-height: 1.3; letter-spacing: -.03rem}
+h4	{font-size: 1.8rem; line-height: 1.35; letter-spacing: -.03rem}
+h5	{font-size: 1.4rem; line-height: 1.5; letter-spacing: -.05rem}
+h6	{font-size: 1.2rem; line-height: 1.6; letter-spacing: -.0rem}
+
+/*PERATAAN*/
+.rata-kanan 	{text-align: right;}
+.rata-kiri 		{text-align: left;}
+.rata-tengah 	{text-align: center;}
+.rata-justify	{text-align: justify;}
+
+/*LAIN-LAIN*/
+.highlight, .highlight-gelap	{width:auto; padding: .15rem .5rem; border-radius: .3rem}
+.highlight						{color: #333; background-color: #FFF;}
+.highlight-gelap				{color: #FFF; background-color: #333;}

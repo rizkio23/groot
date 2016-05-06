@@ -1,0 +1,77 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html{font-size: 62.5%}
+
+/*BASIC*/
+.kontainer{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+
+	display: flex;
+	flex: 0 1 auto;
+	flex-direction: column;
+}
+
+.baris{
+	width: 100%;
+	min-height: 1px;
+
+	/*FLEX PROPERTIES*/
+	display: flex;
+	flex: 0 0 auto;
+	flex-wrap: wrap;
+}
+
+.kolom, .kolom-satu, .kolom-dua, .kolom-tiga, .kolom-empat, .kolom-lima, .kolom-enam{
+	flex: 0 1 auto;
+	width: 100%;
+}
+
+.baris > div{margin: 0.3rem 0}
+
+/*UKURAN*/
+.perluas		{flex-grow: 2;}
+.perluas-2x		{flex-grow: 3;}
+.perluas-3x		{flex-grow: 4;}
+.halaman-penuh	{min-height:100vh;}
+
+/*POSISI*/
+.kolom-atas 	{align-items: flex-start;}
+.kolom-vtengah	{align-items: center;}
+.kolom-bawah	{align-items: flex-end;}
+
+.baris-atas,
+.baris-tengah,
+.baris-bawah	{justify-content: all;}
+
+/*RESPONSIF*/
+@media (min-width: 48rem){
+	.baris			{flex:0 1 auto; flex-wrap: nowrap; margin-bottom: 0.5rem;}
+	.baris > div	{margin: 0 0.3rem}
+	
+	.baris > div:first-child {margin: 0 0.3rem 0 0}
+	.baris > div:last-child	 {margin: 0 0 0 0.3rem}
+
+	.kolom 			{width: auto; flex-grow: 1;}
+	.kolom-satu	  	{flex-basis: 16.6666667%;}
+	.kolom-dua	  	{flex-basis: 33.3333333%;}
+	.kolom-tiga	  	{flex-basis: 50%;}
+	.kolom-empat  	{flex-basis: 66.6666667%;}
+	.kolom-lima	  	{flex-basis: 83.3333333%;}
+	.kolom-enam	  	{flex-basis: 100%;}
+
+	
+	.baris-atas, 
+	.kolom-kiri 	{justify-content: flex-start;}
+	.baris-tengah, 
+	.kolom-tengah 	{justify-content: center;}
+	.baris-bawah, 
+	.kolom-kanan	{justify-content: flex-end;}
+}
+
+

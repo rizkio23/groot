@@ -1,0 +1,16 @@
+0.11.0
+- Fitur dasar dengan layout responsif dasar.
+
+0.14.5
+new:
+- Redesign GRID (more responsive)
+- Fitur hilang (hidden)
+- Fitur box-tengah
+
+Fixed:
+- Hapus font-family kecuali di GROOT-tipografi
+- Font-family more accessable
+- Grid pada tampilan mobile memiliki padding yang lebih luas
+- Fix margin hancur saat diresize
+- Fix margin tombol dan textbox yang tidak rata
+

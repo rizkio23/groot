@@ -1,0 +1,112 @@
+/*RESETER*/
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+html{
+	/* 	Jangan diganti */
+	font-size: 62.5%;
+	/* 
+	Unit ukur menggunakan unit REM (Root EM)
+	62.5% = 10px = 1rem
+	*/
+}
+
+.kontainer, .kontainer-penuh{
+	width: 100%;
+	margin: 0 auto;
+
+	display: flex;
+	flex: 1 0 auto;
+	flex-flow: column nowrap;
+}
+
+.kontainer{
+	max-width: 1200px;
+}
+
+.baris{
+	width: 100%;
+	min-height: 1px;
+
+	display: flex;
+	flex: 0 0 auto;
+	flex-flow: row nowrap;
+
+}
+
+/* [ KOLOM ] */
+.kolom{
+	max-width: 100%;
+	flex: 1 1 auto;
+	margin: .2em;
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+}
+
+/*.baris > div.kolom:first-child{margin-left: 0}
+.baris > div.kolom:last-child{margin-right: 0}*/
+
+.bsr-1, .bsr-2, .bsr-3, .bsr-4, .bsr-5, .bsr-6,
+.sdg-1, .sdg-2, .sdg-3, .sdg-4, .sdg-5, .sdg-6,
+.kcl-1, .kcl-2, .kcl-3, .kcl-4, .kcl-5, .kcl-6
+{flex-grow: 0;}
+/*
+Layar besar 
+x > 600px
+*/
+
+.bsr-1	{flex-basis: 16.67%;}
+.bsr-2	{flex-basis: 33.33%;}
+.bsr-3	{flex-basis: 50%;}
+.bsr-4	{flex-basis: 66.67%;}
+.bsr-5	{flex-basis: 83.33%;}
+.bsr-6	{flex-basis: 100%;}
+
+/*
+Layar sedang 
+600 > x > 360 
+*/
+@media only screen and (max-width: 60rem){
+	.baris 	{ flex-wrap: wrap;}
+	.sdg-1	{flex-basis: 16.67%;}
+	.sdg-2	{flex-basis: 33.33%;}
+	.sdg-3	{flex-basis: 48.5%;}
+	.sdg-4	{flex-basis: 66.67%;}
+	.sdg-5	{flex-basis: 83.33%;}
+	.sdg-6	{flex-basis: 100%;}
+}
+
+/*
+Layar kecil
+360 > x 
+*/
+@media only screen and (max-width: 36rem){
+	.baris { flex-wrap: wrap;}
+	/*.kolom {padding-left: 1.5rem; padding-right: 1.5rem;}*/
+	.kcl-1	{flex-basis: 16.67%;}
+	.kcl-2	{flex-basis: 33.33%;}
+	.kcl-3	{flex-basis: 48.5%;}
+	.kcl-4	{flex-basis: 66.67%;}
+	.kcl-5	{flex-basis: 83.33%;}
+	.kcl-6	{flex-basis: 100%;}
+}
+
+/* [ PERATAAN ] */
+.box-tengah {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* [LAIN-LAIN] */
+
+/* Fitur hilangkan elemen */
+.hilang {display: none;}
+
+@media only screen and (max-width: 60rem){
+	.hilang-sedang{display: none;}
+}
+
+@media only screen and (max-width: 36rem){
+	.hilang-kecil{display: none;}
+}

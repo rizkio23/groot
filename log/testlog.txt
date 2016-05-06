@@ -1,0 +1,13 @@
+Alpha test #1
+- Tambah fitur hidden
+- fitur hoverable
+- Fitur align dibuat class sendiri dengan menjadikannya flex?
+- Spesifik font type (boldness, style, dll)
+- Hapus font-family di css lain, hanya di tipografi.
+- Jadikan kode tsb accessable dari atas
+- Grid pada mobile masih belum memiliki padding
+- ketika diresize, margin hancur pada grid
+- REDESIGN GRID?
+- margin tombol dan form tidak sama
+
+========== CLOSED ============================================

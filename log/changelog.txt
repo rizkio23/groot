@@ -1,4 +1,4 @@
-0.11.0
+0.11
 - Fitur dasar dengan layout responsif dasar.
 
 0.14.5
@@ -14,3 +14,5 @@ Fixed:
 - Fix margin hancur saat diresize
 - Fix margin tombol dan textbox yang tidak rata
 
+0.15
+- Pilihan warna dirampingkan

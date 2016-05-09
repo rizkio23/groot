@@ -1,98 +1,97 @@
-#header{
-	border-bottom: 1px #CCC solid;
+.kontainer{
+	margin-top: .8rem; 
 }
 
-#menu{
-	padding: 2.3rem 0;
+#header{
+	position: sticky;
+	top: 0;
+	background-color: white;
+	border-bottom:1px #EEE solid;
+	align-items: center;
 }
-#menu ul{
-	display: flex;
-	justify-content: flex-end;
+
+#header .baris{
+	width: 90%;
 }
 
 #menu li{
 	display: inline-block;
-	margin: 0 2rem;
-	font-size: 1.2rem;
-	text-transform: uppercase;
-	font-weight: bold;
-	letter-spacing: .1rem;
-	cursor: pointer;
-	/*background-color: #EEE;*/
+	list-style: none;
+
+	margin-left: 1rem;
+	margin-right: 1rem;
+	margin-top: .5rem;
+
+	font-size: 1.5rem;
+	font-weight: 500; 
 }
 
-#menu li:hover{
-	color: #FF0038;
+@media only screen and (max-width: 60rem){
+	#header > .baris > .kolom{
+		text-align: center;
+		align-items: center;
+	}
+}
+@media only screen and (max-width: 36rem){
+	#header > .baris > .kolom{
+		text-align: center;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+	}
+	#header > .baris > .kolom:last-child > ul li{font-size: 1.2rem;}
 }
 
-#logo{
-	display: flex; 
-	align-items: center;
-	padding-left: 1rem;
+#hero{
+	height: 90vh;
+	/*background-color: grey;*/
+	text-align: center;
 }
 
-@media all and (max-width: 48rem){
-	#logo {justify-content: center;}
-	#menu ul{justify-content: center;}
+#hero h1{
+	font-size: 7rem;
 }
 
-#jumbo{
-	height: 89vh;
-	/*background-color: #EEE;*/
+#hero h4{
+	font-weight: 300;
+	font-size: 2rem;
 }
 
-#jumbo h1{
-	font-weight: 600;
+#hero br{
+	margin-bottom: 2rem;
 }
 
-#jumbo h4{
-	letter-spacing: .3rem;
-	font-weight: normal;
+.box-konten > div{
+	width: 20%;
+	padding: 1rem;
+	border:1px #EEE solid;
 }
 
-#produk{margin-top: 3rem;}
-#produk > div{
-	width: 150px;
-	padding: 1rem 1rem;
-	padding-bottom: 0;
-	margin: 0 1rem;
-	border: 1px #DDD solid;
+#contoh{
+	margin-bottom: 2rem;
+}
+
+#contoh .baris{
+	flex-wrap: nowrap;
+}
+
+#contoh .kolom, #contoh-responsif .kolom{
+	border:1px #DDD solid;
 	border-radius: 4px;
-}
-#produk > div:first-child{margin-left: 0}
-#produk > div:last-child{margin-right: 0}
-
-#produk h4{font-weight: bolder; letter-spacing: .5; text-align: center;}
-#produk p{font-size: 1.3rem}
-
-@media all and (max-width: 48rem){
-	#produk{justify-content: center;}
-	#produk > div{
-	width: 40%;
-	}
-}
-
-@media all and (max-width: 36rem){
-	#produk > div{
-	width: 100%;
-	}
-}
-
-h4{
-	letter-spacing: .2rem;
-	font-size: 1.7rem;
-	margin-bottom: 1rem
-}
-
-#contoh{margin: 2rem 0}
-#contoh .baris > div{
-	padding: .3rem 0;
 	text-align: center;
 	background-color: #EEE;
-	border: 1px #DDD solid;
-	border-radius: 4px;
-	cursor: pointer;
 }
-#contoh .baris > div:hover{
-	background-color: #AAA;
+
+#contoh .kolom{
+	flex-shrink: 1;
+}
+
+.bordered{
+	border:1px #EEE solid;
+	border-radius: 4px;
+}
+
+p{
+	margin-top: 1rem;
+	margin-bottom: 2rem;
 }

@@ -16,3 +16,8 @@ Fixed:
 
 0.15
 - Pilihan warna dirampingkan
+- Fix warna tulisan tag a dengan class tombol
+
+0.16
+- tambah grid ukuran auto (-0)
+- Fix beberapa masalah

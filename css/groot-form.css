@@ -18,9 +18,9 @@ input[type="reset"],
 	text-transform: uppercase;
 	white-space: nowrap;
 	border-radius: 4px;
-	background-color: transparent;
 	box-sizing: border-box;
 	cursor: pointer;
+	background-color: rgba(1,1,1,0);
 }
 
 button, 
@@ -39,6 +39,8 @@ input[type="reset"]:hover,
 .tombol:hover{
 	border-color: #555; color: #555
 }
+
+a.tombol{color:#555;}
 
 .tb-biru			{color: #FFF; border: 1px #33C3F0 solid; background-color: #33C3F0;}
 .tb-biru:hover		{color: #FFF; border: 1px #33C3F0 solid; background-color: #1DACD6;}

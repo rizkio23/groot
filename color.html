@@ -4,8 +4,10 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/groot-grid.css">
 	<link rel="stylesheet" type="text/css" href="css/groot-warna.css">
+	<link rel="stylesheet" type="text/css" href="css/groot-form.css">
+	<link rel="stylesheet" type="text/css" href="css/groot-tipografi.css">
 	<style type="text/css">
-	.kolom{height: 50px; width: 100px; border: 1px #CCC solid; display: flex; justify-content: center; align-items: center;}
+	.kolom{height: 90px; width: 50px; border: 1px #CCC solid; display: flex; justify-content: center; align-items: center;}
 	h1{
 		font-size: 1.5em;
   		line-height: 1.6;
@@ -16,16 +18,15 @@
 	</style>
 </head>
 <body>
-<div class="kontainer">
-	
-</div>
+<div class="kontainer"></div>
+
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
 		var no = 1;
-		for (var i = 1; i <= 460/10; i++) {
+		for (var i = 1; i <= 34/5; i++) {
 			$(".kontainer").append("<div class='baris b"+i+"''></div>");
-			for (var j = 1; j <= 10; j++) {
+			for (var j = 1; j <= 5; j++) {
 				$(".b"+i).append("<div class='kolom bg-"+(no)+"''><h1 class='cl-Acajou'>.bg-"+(no++)+"</h1></div>");
 			}
 		}

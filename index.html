@@ -1,125 +1,228 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
 	<title>GROOT CSS</title>
-	<link rel="stylesheet" type="text/css" href="css/groot-grid-old.css">
-	<link rel="stylesheet" type="text/css" href="css/groot-tipografi.css">
-	<link rel="stylesheet" type="text/css" href="css/groot-form.css">
-	<link rel="stylesheet" type="text/css" href="css/groot-warna.css">
-	<link rel="stylesheet" type="text/css" href="css/home.css">
-	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="stylesheet" href="css/groot-grid.css">
+	<link rel="stylesheet" href="css/groot-tipografi.css">
+	<link rel="stylesheet" href="css/groot-form.css">
+	<link rel="stylesheet" href="css/groot-warna.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 </head>
 <body>
-<div class="kontainer">
-	<div class="baris kolom-tengah" id="header">
-		<div class="kolom" id="logo">
-			<h2>GROOT</h2>
-		</div>
-		<div class="kolom" id="menu">
-			<ul>
-				<li>beranda</li>
-				<li>CSS</li>
-				<li>rilis</li>
-				<li>tentang</li>
-			</ul>
-		</div>
-	</div>
-	<div class="baris kolom-tengah kolom-vtengah" id="jumbo">
-		<div class="kolom rata-tengah">
-			<h1 style="font-size: 7rem; font-weight: 900">GROOT</h1>
-			<h1 style="font-weight: 300;">Sebuah CSS individual yang simpel</h1>
-			<h4>responsif, ringan, dan simplistik</h4>
-			<br>
-			<a href="" class="tombol" style="margin-bottom: 2rem;">Download Paket Komplit</a>
-			<!-- <a href="" class="tombol tb-biru" style="margin-bottom: 2rem;">Download</a> -->
-			<!-- <hr> -->
-		</div>
-	</div>
-	<div class="baris kolom-tengah">
-		<div class="kolom-lima">
-			<h4>DOWNLOAD INDIVIDUAL</h4>
-			<div class="baris" id="produk">
-			<div class="kolom">
-				<h4>GROOT GRID</h4>
-				<p class="rata-tengah">Sistem GRID responsif enam kolom yang menerapkan CSS3 Flex</p>
-				<a href="" class="tombol tb-biru ukuran-penuh" style="margin-bottom: 2rem;">Download</a>
-			</div>
-			<div class="kolom">
-				<h4>GROOT TIPOGRAFI</h4>
-				<p class="rata-tengah">Desain tipogafi yang simplistic sebagai ganti gaya dasar</p>
-				<a href="" class="tombol tb-merah ukuran-penuh" style="margin-bottom: 2rem;">Download</a>
-			</div>
-			<div class="kolom">
-				<h4>GROOT FORM</h4>
-				<p class="rata-tengah">Menghadirkan desain form yang simple dan kokoh</p>
-				<a href="" class="tombol tb-hijau ukuran-penuh" style="margin-bottom: 2rem;">Download</a>
-			</div>
-			<div class="kolom">
-				<h4>GROOT WARNA</h4>
-				<p class="rata-tengah">Menyediakan lebih dari 400 kelas warna yang siap pakai</p>
-				<a href="" class="tombol tb-kuning ukuran-penuh" style="margin-bottom: 2rem;">Download</a>
+	<div class="kontainer-penuh" id="header">
+		<div class="baris">
+			<div class="kolom bsr-1 sdg-6 kcl-6"><h1>GROOT</h1></div>
+			<div class="kolom bsr-5 sdg-6 kcl-6 box-kanan-tengah">
+				<ul id="menu">
+					<li>BERANDA</li>
+					<li>CSS</li>
+					<li>RILIS</li>
+					<li>TENTANG</li>
+				</ul>
 			</div>
 		</div>
-		</div>
 	</div>
-	<div class="baris kolom-tengah">
-		<div class="kolom-lima">
-			<hr>
-			<h4>APA ITU GROOT?</h4>
-			<p><b>GROOT</b> merupakan CSS framework individual
-			yang dapat digunakan untuk keperluan web layouting.
-			GROOT cocok digunakan untuk keperluan layouting projek dalam skala kecil
-			yang tidak membutuhkan fitur layouting kompleks. GROOT sendiri terdiri dari 4 elemen
-			utama yaitu <b>GROOT Grid</b>, <b>GROOT Tipografi</b>, <b>GROOT Form</b>, dan 
-			<b>GROOT Warna</b>. Setiap elemen dapat diterapkan secara individual tanpa
-			adanya ketergantungan antar elemen.</p>
-			<br>
-			<p>Dukung GROOT dengan cara membagikannya ke khalayak ramai</p>
+	<div class="kontainer">
+		<div class="baris" id="hero">
+			<div class="kolom box-tengah">
+				<h1>GROOT CSS</h1>
+				<h4>sebuah Framework CSS yang simple, ringan, dan responsif</h4>
+				<br>
+				<a href="" class="tombol">Unduh paket komplit</a>
+			</div>
 		</div>
-	</div>
+		<div class="baris">
+			<div class="kolom">
+				<h3>Download individual</h3>
+				<div class="baris box-konten">
+					<div class="kolom bsr-0 sdg-3 kcl-6 box-tengah-atas">
+						<h3>GROOT GRID</h3>
+						<p class="rata-tengah">Sebuah sistem GRID 6 kolom responsif yang didasari oleh CSS3 Flex. Mudah dan ringan.</p>
+						<a href="" class="tombol ukuran-penuh">DOWNLOAD</a>
+					</div>
+					<div class="kolom bsr-0 sdg-3 kcl-6 box-tengah-atas">
+						<h3>GROOT TIPOGRAFI</h3>
+						<p class="rata-tengah">Tipografi simpel dan rapi yang menggantikan gaya dasar tanpa banyak menerapkan kelas ada tag.</p>
+						<a href="" class="tombol ukuran-penuh">DOWNLOAD</a>
+					</div>
+					<div class="kolom bsr-0 sdg-3 kcl-6 box-tengah-atas">
+						<h3>GROOT FORM</h3>
+						<p class="rata-tengah">Form yang simplistik dan kokoh yang menggantikan gaya dasar. Penuh dengan kostumisasi dan pilihan gaya.</p>
+						<a href="" class="tombol ukuran-penuh">DOWNLOAD</a>
+					</div>
+					<div class="kolom bsr-0 sdg-3 kcl-6 box-tengah-atas">
+						<h3>GROOT COLOR</h3>
+						<p class="rata-tengah">Kumpulan kelas warna yang dapat langsung diaplikasikan pada tag yang diinginkan.</p>
+						<a href="" class="tombol ukuran-penuh">DOWNLOAD</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="baris">
+			<div class="kolom">
+				<hr>
+				<h4>Apa Itu GROOT?</h4>
+				<p><b>GROOT</b> merupakan CSS framework individual
+				yang dapat digunakan untuk keperluan web layouting.
+				GROOT cocok digunakan untuk keperluan layouting projek dalam skala kecil
+				yang tidak membutuhkan fitur layouting kompleks. GROOT sendiri terdiri dari 4 elemen
+				utama yaitu <b>GROOT Grid</b>, <b>GROOT Tipografi</b>, <b>GROOT Form</b>, dan 
+				<b>GROOT Warna</b>. Setiap elemen dapat diterapkan secara individual tanpa
+				adanya ketergantungan antar elemen.</p>
+				<br>
+				<p>Dukung GROOT dengan cara membagikannya ke khalayak ramai</p>
+			</div>
+		</div>
+		<div class="baris">
+			<div class="kolom">
+				<hr>
+				<h4>Sistem Grid</h4>
+				<p><b>GROOT</b> mengadopsi sistem grid 6 kolom yang dilandasi oleh CSS3 Flex.
+				Sistem grid pada GROOT memiliki width maksimum 1200px yang dapat mengecil sesuai ukuran
+				browser.</p>
 
-	<div class="baris kolom-tengah">
-		<div class="kolom-lima">
-			<hr>
-			<h4>SISTEM GRID</h4>
-			<p><b>GROOT</b> mengadopsi sistem grid 6 kolom yang dilandasi oleh CSS3 Flex.
-			Sistem grid pada GROOT memiliki width maksimum 1200px yang dapat mengecil sesuai ukuran
-			browser.</p>
-
-			<div class="kontainer" id="contoh">
-				<div class="baris">
-					<div class="kolom-satu">satu</div>
-					<div class="kolom-lima">lima</div>
+				<div class="kontainer" id="contoh">
+					<div class="baris">
+						<div class="kolom bsr-1">satu</div>
+						<div class="kolom bsr-5">lima</div>
+					</div>
+					<div class="baris">
+						<div class="kolom bsr-2">dua</div>
+						<div class="kolom bsr-4">empat</div>
+					</div>
+					<div class="baris">
+						<div class="kolom bsr-3">tiga</div>
+						<div class="kolom bsr-3">tiga</div>
+					</div>
+					<div class="baris">
+						<div class="kolom bsr-4">empat</div>
+						<div class="kolom bsr-2">dua</div>
+					</div>
+					<div class="baris">
+						<div class="kolom bsr-5">lima</div>
+						<div class="kolom bsr-1">satu</div>
+					</div>
 				</div>
-				<div class="baris">
-					<div class="kolom-dua">dua</div>
-					<div class="kolom-empat">empat</div>
+				<h4>Responsif</h4>
+				<p>GROOT Grid bersifat responsif. Grid berubah pada ukuran <b class="highlight-gelap"> x > 600px</b>, <b class="highlight-gelap">600px > x > 360px</b>, dan <b class="highlight-gelap">360px > x</b> dengan menerapkan kelas <code>bsr-</code> <code>sdg-</code> dan <code>kcl-</code>.</p>
+				<div class="kontainer" id="contoh-responsif">
+					<div class="baris">
+						<div class="kolom bsr-0 sdg-6 kcl-6">bsr-1, sdg-6, kcl-6</div>
+						<div class="kolom bsr-0 sdg-3 kcl-6">bsr-2, sdg-3, kcl-6</div>
+						<div class="kolom bsr-0 sdg-3 kcl-6">bsr-3, sdg-3, kcl-6</div>
+					</div>
+					<p>*Resize browser untuk melihat hasil</p>
 				</div>
-				<div class="baris">
-					<div class="kolom-tiga">tiga</div>
-					<div class="kolom-tiga">tiga</div>
+				<br>
+				<h4>Posisi</h4>
+				<p>On The Way</p>
+			</div>
+		</div>
+		<div class="baris">
+			<div class="kolom">
+				<hr>
+				<h4>Tipografi</h4>
+				<p>
+				GROOT Tipografi merupakan sekumpulan gaya (style) yang bertujuan untuk mendesain ulang gaya tipografi
+				dasar pada HTML agar terlihat lebih rapi dan menarik. GROOT Tipografi mencangkup pemodelah tipografi
+				secara general, heading <code>h1 - h6</code>, paragraf <code>p</code>, dan anchor <code>a</code>.
+				</p>
+				<div class="baris bordered">
+					<div class="kolom box-kiri-tengah">
+						<h1>Heading 1</h1>
+					</div>
+					<div class="kolom box-kiri-tengah">
+						<h2>Heading 2</h2>
+					</div>
+					<div class="kolom box-kiri-tengah">
+						<h3>Heading 3</h3>
+					</div>
+					<div class="kolom box-kiri-tengah">
+						<h4>Heading 4</h4>
+					</div>
+					<div class="kolom box-kiri-tengah">
+						<h5>Heading 5</h5>
+					</div>
+					<div class="kolom box-kiri-tengah">
+						<h6>Heading 6</h6>
+					</div>
 				</div>
-				<div class="baris">
-					<div class="kolom-empat">empat</div>
-					<div class="kolom-dua">dua</div>
-				</div>
-				<div class="baris">
-					<div class="kolom-lima">lima</div>
-					<div class="kolom-satu">satu</div>
+				<div class="baris box-konten">
+					<div class="kolom bsr-0 sdg-3 kcl-6 rata-kiri">
+						<h3>Rata Kiri</h3>
+						<p class="rata-kiri">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure a explicabo, rerum ducimus possimus, corporis cumque?</p>
+						<a href="">Baca Selengkapnya</a>
+					</div>
+					<div class="kolom bsr-0 sdg-3 kcl-6 rata-tengah">
+						<h3>Rata Tengah</h3>
+						<p class="rata-tengah">Ab officia, aspernatur rem expedita hic tempore unde dolore vitae laudantium, quis recusandae aut, in magni.</p>
+						<a href="">Baca Selengkapnya</a>
+					</div>
+					<div class="kolom bsr-0 sdg-3 kcl-6 rata-kanan">
+						<h3>Rata Kanan</h3>
+						<p class="rata-kanan">Consectetur modi officia dolorem reprehenderit quam, voluptatum voluptatem nulla quo, excepturi recusandae placeat sequi earum dignissimos.</p>
+						<a href="">Baca Selengkapnya</a>
+					</div>
+					<div class="kolom bsr-0 sdg-3 kcl-6 rata-tengah">
+						<h3>Rata Justify</h3>
+						<p class="rata-justify">Rerum numquam sapiente alias laudantium in consectetur, perspiciatis nihil mollitia minus, praesentium aliquam est architecto quia.</p>
+						<a href="">Baca Selengkapnya</a>
+					</div>
 				</div>
 			</div>
-<pre><code>
-	
-</code></pre>
+		</div>
+		<div class="baris">
+			<div class="kolom">
+				<hr>
+				<h3>Form</h3>
+				<p>GROOT Form juga sama seperti komponen CSS GROOT lainnya yaitu berfungsi menimpa gaya dasar form
+				menjadi gaya form yang lebih elegan dan kokoh tanpa harus menerapkan kelas yang begitu kompleks</p>
+				<div class="baris">
+					<div class="kolom bsr-2 sdg-4 kcl-6" style="padding-left: 0; margin-left: 0">
+						<input type="text" placeholder="Masukkan Nama" class="ukuran-penuh">
+						<input type="password" placeholder="Masukkan Password" class="ukuran-penuh">
+						<textarea class="ukuran-penuh" placeholder="Masukkan Alamat"></textarea>
+						<select name="" id="" class="ukuran-penuh">
+							<option value="">pilihan 1</option>
+							<option value="">pilihan 2</option>
+							<option value="">pilihan 3</option>
+							<option value="">pilihan 4</option>
+							<option value="">pilihan 5</option>
+						</select>
+					</div>
+				</div>
+				<br>
+				<h4>Radio &amp Cehckbox</h4>
+				<label>
+					<input type="radio" name="plh"><span>Pilihan satu</span>
+				</label>
+				<label>
+					<input type="radio" name="plh"><span>Pilihan dua</span>
+				</label>
+				<label>
+					<input type="checkbox" name="plh"><span>Pilihan Checklist</span>
+				</label>
+				<br>
+				<h4>Tombol</h4>
+				Gaya tombol berlaku pada <code>input</code> (tipe button, submit, reset), <code>button</code>, dan tag <code>a</code> yang diberi kelas <code>.tombol</code>
+				<div class="baris" style="margin-top: 1rem">
+					<div class="kolom" style="padding-left: 0; margin-left: 0">
+						<input type="button" value="Input Button">
+						<input type="submit" value="Input Submit">
+						<input type="reset" value="Input Reset">
+						<button>Button</button>
+						<a href="" class="tombol">Anchor dengan kelas tombol</a>
+						<br>
+						<button class="tb-merah">Merah</button>
+						<button class="tb-biru">Biru</button>
+						<button class="tb-kuning">Kuning</button>
+						<button class="tb-hijau">Hijau</button>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-
-	<div class="baris kolom-tengah">
-		<div class="kolom-lima">
-			<hr>
-			<h4></h4>
-		</div>
-	</div>
-</div>
 </body>
 </html>

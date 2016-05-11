@@ -21,3 +21,6 @@ Fixed:
 0.16
 - tambah grid ukuran auto (-0)
 - Fix beberapa masalah
+
+0.17
+- Fix beberapa isu di GROOT Form

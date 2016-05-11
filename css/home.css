@@ -50,7 +50,7 @@ p{
 }
 
 #hero{
-	height: 90vh;
+	height: 93vh;
 	/*background-color: grey;*/
 	text-align: center;
 }
@@ -118,8 +118,12 @@ p{
 	font-weight: 400;
 }
 
+.box > .baris > div[class*="box-"]{
+	height: 10rem;
+}
+
 .grid-form{
-	margin: 1.5rem 0
+	margin: 1.5rem 0;
 }
 
 .grid-form > .kolom{
